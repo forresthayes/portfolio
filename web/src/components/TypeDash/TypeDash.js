@@ -13,8 +13,17 @@ const TypeDash = () => {
     'records high scores, and blocks copy - and - paste cheating.'
 
   const tags = ['React', 'Rails', 'Bulma']
+  const links = {
+    live: 'https://ptolemys-almagest.herokuapp.com/',
+    github: 'https://github.com/forresthayes/speed_typer',
+  }
 
-  return <Project title="Type Dash" {...{ cover, slides, description, tags }} />
+  return (
+    <Project
+      title="Type Dash"
+      {...{ cover, slides, description, tags, links }}
+    />
+  )
 }
 
 export default TypeDash

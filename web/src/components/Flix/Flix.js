@@ -11,9 +11,16 @@ const Flix = () => {
   const description =
     'Flix is a movie review site where users can read plot summaries and previous reviews, ' +
     'rate movies on a five-star scale, and leave their own comments.'
-  const tags = ['React', 'RedwoodJS', 'GraphQL', 'Bulma']
 
-  return <Project title="Flix" {...{ cover, slides, description, tags }} />
+  const tags = ['React', 'RedwoodJS', 'GraphQL', 'Bulma']
+  const links = {
+    live: 'https://thirsty-chandrasekhar-801647.netlify.app/',
+    github: 'https://github.com/forresthayes/redwoodflix',
+  }
+
+  return (
+    <Project title="Flix" {...{ cover, slides, description, tags, links }} />
+  )
 }
 
 export default Flix

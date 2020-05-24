@@ -16,6 +16,7 @@ const ProjectModal = ({
   slides,
   description,
   tags,
+  links,
 }) => {
   const [value, setValue] = useState(0)
   const close = () => setIsActive(false)
@@ -53,7 +54,6 @@ const ProjectModal = ({
               />
             }
             addArrowClickHandler
-            clickToChange
             dots
           />
           <Content style={{ marginTop: '1.5rem' }}>
@@ -61,8 +61,14 @@ const ProjectModal = ({
           </Content>
           <Tag.Group>{techTags}</Tag.Group>
         </Modal.Card.Body>
-        <Modal.Card.Foot>
+        <Modal.Card.Foot
+          style={{ display: 'flex', justifyContent: 'space-between' }}
+        >
           <Button onClick={close}>Close</Button>
+          <Button.Group>
+            <Button href={links.live}>Live Link</Button>
+            <Button href={links.github}>GitHub</Button>
+          </Button.Group>
         </Modal.Card.Foot>
       </Modal.Card>
     </Modal>
