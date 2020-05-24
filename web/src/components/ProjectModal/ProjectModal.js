@@ -66,8 +66,12 @@ const ProjectModal = ({
         >
           <Button onClick={close}>Close</Button>
           <Button.Group>
-            <Button href={links.live}>Live Link</Button>
-            <Button href={links.github}>GitHub</Button>
+            <Button as="a" href={links.live}>
+              Live Link
+            </Button>
+            <Button as="a" href={links.github}>
+              GitHub
+            </Button>
           </Button.Group>
         </Modal.Card.Foot>
       </Modal.Card>
