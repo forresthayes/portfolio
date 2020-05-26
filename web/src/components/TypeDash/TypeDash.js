@@ -15,7 +15,7 @@ const TypeDash = () => {
   const tags = ['React', 'Rails', 'Bulma']
   const links = {
     live: 'https://ptolemys-almagest.herokuapp.com/',
-    github: 'https://github.com/forresthayes/speed_typer',
+    github: 'https://github.com/forresthayes/type-dash',
   }
 
   return (

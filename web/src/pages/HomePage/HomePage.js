@@ -7,9 +7,11 @@ import {
   Column,
   Content,
   Button,
+  Tag,
 } from 'rbx'
 import TypeDash from 'src/components/TypeDash'
 import Flix from 'src/components/Flix'
+import Skills from 'src/components/Skills'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
@@ -41,7 +43,9 @@ const HomePage = () => {
         <Column size="three-fifths">
           <Section style={{ paddingBottom: '0' }}>
             <Container>
-              <Title size={4}>About Me</Title>
+              <Title as="h3" size={4}>
+                About Me
+              </Title>
               <Content>
                 <p>
                   I am a self-taught, full-stack JavaScript developer and a
@@ -51,12 +55,12 @@ const HomePage = () => {
                   <a href="https://reactjs.org">React</a> and{' '}
                   <a href="https://redwoodjs.com">RedwoodJS</a>.
                 </p>
-                <p>
-                  Contact me at <strong>forresthayes</strong> at{' '}
-                  <strong>pm</strong> dot <strong>me</strong>.
-                </p>
 
-                <Title size={5}>Profiles</Title>
+                <Skills />
+
+                <Title as="h3" size={4}>
+                  Profiles
+                </Title>
                 <ul>
                   <li>
                     <a href="https://github.com/forresthayes">GitHub</a>
@@ -67,12 +71,22 @@ const HomePage = () => {
                     </a>
                   </li>
                 </ul>
+
+                <Title as="h3" size={4}>
+                  Contact
+                </Title>
+                <p>
+                  <strong>forresthayes</strong> at <strong>pm</strong> dot{' '}
+                  <strong>me</strong>
+                </p>
               </Content>
             </Container>
           </Section>
           <Section>
             <Container>
-              <Title size={4}>Projects</Title>
+              <Title as="h3" size={4}>
+                Projects
+              </Title>
               <hr />
 
               <Column.Group centered>

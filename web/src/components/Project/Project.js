@@ -7,7 +7,9 @@ const Project = ({ title, cover, ...props }) => {
   return (
     <Card backgroundColor="light" className="project hvr-box-shadow-outset">
       <Card.Content onClick={() => setIsActive(true)}>
-        <Title size={4}>{title}</Title>
+        <Title as="h4" size={4}>
+          {title}
+        </Title>
         <Image.Container>
           <Image src={cover} />
         </Image.Container>

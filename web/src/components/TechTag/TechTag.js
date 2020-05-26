@@ -1,8 +1,8 @@
 import { Tag } from 'rbx'
 
-const TechTag = ({ name }) => {
+const TechTag = ({ name, backgroundColor, color }) => {
   return (
-    <Tag style={{ backgroundColor: '#ebfffc', color: '#00947e' }} size="medium">
+    <Tag style={{ backgroundColor, color }} size="medium">
       {name}
     </Tag>
   )

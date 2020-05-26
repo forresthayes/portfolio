@@ -22,7 +22,9 @@ const ProjectModal = ({
   const close = () => setIsActive(false)
   const onChange = (value) => setValue(value)
   const images = slides.map((i) => <img key={i} src={i} />)
-  const techTags = tags.map((tag) => <TechTag key={tag} name={tag} />)
+  const techTags = tags.map((tag) => (
+    <TechTag key={tag} name={tag} backgroundColor="#ebfffc" color="#00947e" />
+  ))
 
   return (
     <Modal active={isActive} closeOnBlur closeOnEsc onClose={close}>
