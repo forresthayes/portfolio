@@ -48,37 +48,23 @@ const HomePage = () => {
               </Title>
               <Content>
                 <p>
-                  I am a self-taught, full-stack JavaScript developer and a
-                  graduate of{' '}
+                  I am a self-taught, full-stack web developer and a graduate of{' '}
                   <a href="https://www.sjc.edu">St. John&apos;s College</a>,
                   where I studied Liberal Arts. I&apos;m currently focusing on{' '}
                   <a href="https://reactjs.org">React</a> and{' '}
                   <a href="https://redwoodjs.com">RedwoodJS</a>.
                 </p>
+                <p>
+                  You can see my code on{' '}
+                  <a href="https://github.com/forresthayes">GitHub</a> and{' '}
+                  <a href="https://exercism.io/profiles/forresthayes">
+                    Exercism.io
+                  </a>
+                  . Email me at <strong>forresthayes</strong> at{' '}
+                  <strong>pm</strong> dot <strong>me</strong>.
+                </p>
 
                 <Skills />
-
-                <Title as="h3" size={4}>
-                  Profiles
-                </Title>
-                <ul>
-                  <li>
-                    <a href="https://github.com/forresthayes">GitHub</a>
-                  </li>
-                  <li>
-                    <a href="https://exercism.io/profiles/forresthayes">
-                      Exercism.io
-                    </a>
-                  </li>
-                </ul>
-
-                <Title as="h3" size={4}>
-                  Contact
-                </Title>
-                <p>
-                  <strong>forresthayes</strong> at <strong>pm</strong> dot{' '}
-                  <strong>me</strong>
-                </p>
               </Content>
             </Container>
           </Section>
