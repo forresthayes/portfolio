@@ -15,7 +15,7 @@ import Skills from 'src/components/Skills'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-import portrait from './portrait.jpg'
+import portrait from './portrait.jpeg'
 
 const HomePage = () => {
   return (
