@@ -7,10 +7,10 @@ import {
   Column,
   Content,
   Button,
-  Tag,
 } from 'rbx'
 import TypeDash from 'src/components/TypeDash'
 import Flix from 'src/components/Flix'
+import TakeYourPic from 'src/components/TakeYourPic'
 import Skills from 'src/components/Skills'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -76,6 +76,9 @@ const HomePage = () => {
               <hr />
 
               <Column.Group centered>
+                <Column>
+                  <TakeYourPic />
+                </Column>
                 <Column>
                   <TypeDash />
                 </Column>
